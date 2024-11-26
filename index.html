@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button onclick="mybook()"> try it</button>
+
+        <button onclick="ascending()"> ascending order</button>
+        <button onclick="decending()"> decending order</button>
+        <p id="result"></p>
+        <p id="product"></p>
+        <p id="result22"></p>
+<script>
+    var point = [40 , 50 ,67,1, 8];
+document.getElementById("result").innerHTML = point;
+function ascending(){
+    point.sort(function (a,b){return a-b});
+    document.getElementById("result").innerHTML = point;
+}
+    function decending(){
+    point.sort(function (a,b){return b-a});
+    document.getElementById("result").innerHTML = point;
+}
+var point = [40 , 50 ,67,1, 8];
+function myfunction(){
+    return num * 10;
+
+}
+var ne = number.map(myfunction);
+document.getElementById("product").innerHTML = ne;
+
+
+function mybook(){
+var x = 48;
+var y = 5;
+var a = eval("x + y") + "<br>";
+var b = eval("2 * 2") + "<br>";
+var c = eval("y - x") + "<br>";
+
+var res =  a + b + c;
+
+document.getElementById("result22").innerHTML = res;
+}
+
+</script>
+
+    </body>
+</html>
